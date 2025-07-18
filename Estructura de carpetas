@@ -1,0 +1,8 @@
+/mi-tienda/
+│
+├── index.html
+├── styles.css
+└── /imagenes/
+    ├── mochila1.jpg
+    ├── bolso1.jpg
+    └── ...
