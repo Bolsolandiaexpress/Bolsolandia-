@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda Marroquinería | Productos Importados</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Mi Tienda</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Tienda de Marroquinería</h1>
-    <p>Mochilas, valijas, carteras y bolsos importados de excelente calidad</p>
+    <nav>
+      <ul>
+        <li><a href="#mochilas">Mochilas</a></li>
+        <li><a href="#valijas">Valijas</a></li>
+        <li><a href="#carteras">Carteras</a></li>
+        <li><a href="#bolsos">Bolsos</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="productos">
-      <h2>Productos Destacados</h2>
-      <div class="grid">
+    <section id="mochilas" class="categoria">
+      <h2>Mochilas</h2>
+      <div class="galeria">
+        <!-- Ejemplo de producto -->
         <div class="producto">
-          <img src="imagenes/mochila1.jpg" alt="Mochila importada negra">
-          <h3>Mochila Urbana Negra</h3>
-          <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20más%20info%20sobre%20la%20mochila%20negra" class="btn">Consultar por WhatsApp</a>
+          <img src="imagenes/mochila1.jpg" alt="Mochila urbana negra">
+          <p>Mochila urbana negra con compartimento para notebook</p>
+          <a href="https://wa.me/..." class="btn-whatsapp">Consultar WhatsApp</a>
         </div>
-
-        <div class="producto">
-          <img src="imagenes/valija1.jpg" alt="Valija de viaje gris">
-          <h3>Valija de Viaje Mediana</h3>
-          <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20más%20info%20sobre%20la%20valija%20mediana" class="btn">Consultar por WhatsApp</a>
-        </div>
-
-        <div class="producto">
-          <img src="imagenes/cartera1.jpg" alt="Cartera roja importada">
-          <h3>Cartera Roja Elegante</h3>
-          <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20más%20info%20sobre%20la%20cartera%20roja" class="btn">Consultar por WhatsApp</a>
-        </div>
+        <!-- Repetir para más mochilas -->
       </div>
     </section>
+
+    <!-- Repetir sección para Valijas, Carteras y Bolsos -->
   </main>
 
   <footer>
@@ -44,9 +41,6 @@
 </body>
 </html>
 
-    <p>© 2025 Marroquinería Artesanal. Todos los derechos reservados.</p>
-  </footer>
-</body>
 </html>
 <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20más%20info%20sobre%20los%20productos" class="btn" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 
