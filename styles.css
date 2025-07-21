@@ -1,117 +1,169 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* Reset y base */
 * {
   box-sizing: border-box;
 }
+
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
-  color: #333;
+  padding: 0;
+  background-color: #f4efe7; /* beige claro */
+  background-image: url('https://cdn.pixabay.com/photo/2017/09/06/10/27/leather-2724458_1280.jpg');
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  color: #4b3b2b; /* marrón oscuro */
   scroll-behavior: smooth;
 }
-header {
-  background: #fff;
+
+/* Contenedores principales para legibilidad */
+header, main, footer {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  box-shadow: 0 0 15px rgba(75, 59, 43, 0.2);
 }
+
+/* Estilos para encabezado */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #4b3b2b;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6b5849;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+/* Navegación */
 nav ul {
   display: flex;
   justify-content: center;
+  gap: 25px;
   list-style: none;
   padding: 0;
-  margin: 10px 0 0;
+  margin: 10px 0 0 0;
 }
-nav li {
-  margin: 0 15px;
-}
-nav a {
+
+nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #6b5849;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #4b3b2b;
+  color: #f4efe7;
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp-global {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
-nav a:hover {
-  color: #007BFF;
+
+.btn-whatsapp-global:hover {
+  background-color: #1DA851;
 }
-.categoria {
-  padding: 40px 20px;
+
+/* Secciones productos */
+.product-category {
+  margin-top: 30px;
 }
-.categoria h2 {
+
+.product-category h2 {
   text-align: center;
-  margin-bottom: 20px;
   font-size: 1.8rem;
+  color: #4b3b2b;
+  margin-bottom: 20px;
 }
-.galeria {
+
+.products-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
-.producto {
-  background: #fff;
+
+.product-item {
+  background-color: #fff;
   border-radius: 8px;
-  width: 260px;
+  box-shadow: 0 0 8px rgba(75, 59, 43, 0.15);
+  width: 220px;
   padding: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s ease;
 }
-.producto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+
+.product-item:hover {
+  transform: scale(1.05);
 }
-.producto img {
+
+.product-item img {
   max-width: 100%;
-  border-radius: 5px;
-}
-.producto p {
-  margin: 10px 0;
-}
-.btn-whatsapp {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #25D366;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.btn-whatsapp:hover {
-  background: #1DA851;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #fff;
-  margin-top: 40px;
-}
-.encabezado {
-  text-align: center;
+  border-radius: 6px;
   margin-bottom: 10px;
 }
 
-.encabezado h1 {
-  font-size: 2.2rem;
-  margin: 0;
-  color: #333;
-}
-
-.direccion {
+.product-description {
   font-size: 1rem;
-  body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  background: #fdf6f0; /* color beige claro */
-  background-image: url('https://cdn.pixabay.com/photo/2017/09/06/10/27/leather-2724458_1280.jpg');
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  color: #4B3B2B; /* marrón oscuro */
-  scroll-behavior: smooth;
+  color: #6b5849;
 }
 
-  color: #555;
-  margin-top: 5px;
+/* Pie de página */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b5849;
+  margin-top: 40px;
 }
 
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 90%;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
