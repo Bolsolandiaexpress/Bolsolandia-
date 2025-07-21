@@ -103,18 +103,4 @@ footer {
   color: #555;
   margin-top: 5px;
 }
-.btn-whatsapp-global {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #25D366;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
 
-.btn-whatsapp-global:hover {
-  background-color: #1DA851;
-}
