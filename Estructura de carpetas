@@ -1,8 +1,13 @@
-/mi-tienda/
-│
-├── index.html
-├── styles.css
-└── /imagenes/
-    ├── mochila1.jpg
-    ├── bolso1.jpg
-    └── ...
+<section class="categoria" id="bolsos">
+  <h2>Bolsos</h2>
+  <div class="galeria">
+    <div class="producto">
+      <img src="imagenes/bolso1.jpg" alt="Bolso de cuero">
+      <p>Bolso de cuero sintético con detalles metálicos</p>
+    </div>
+    <div class="producto">
+      <img src="imagenes/bolso2.jpg" alt="Bolso grande negro">
+      <p>Bolso amplio ideal para viajes cortos</p>
+    </div>
+  </div>
+</section>
